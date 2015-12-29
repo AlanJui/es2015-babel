@@ -12,6 +12,7 @@
 
 ## 事前準備
 
+<<<<<<< HEAD
 使用本工具前，須事先完成 node, npm 安裝。欲確認 node、npm 是否已完成安裝，並能正常運作，可在「終端機」輸入如下指令，以便確認：
  
 ```
@@ -23,6 +24,17 @@ v5.2.0
 $ npm -v
 3.3.12
 ```
+=======
+ * 使用本工具前，須事先完成 node, npm 安裝。欲確認 node、npm 是否已完成安裝，並能正常運作，可在「終端機」輸入如下指令，以便確認：
+
+    ```
+    $ node -v
+    v5.2.0
+
+    $ npm -v
+    3.3.12
+    ```
+>>>>>>> 04f6f6d0a78dbf555be5b646f284c4a47320da61
 
 ## 安裝配合本工具所需之 Node 模組
 
@@ -35,6 +47,7 @@ $ npm -v
 
 ### 安裝指令
 
+<<<<<<< HEAD
     $ npm install -g gulp eslint
 
 ## 透過 package.json 所需之 Node 模組
@@ -46,4 +59,21 @@ $ npm -v
     $ gulp
 
 
+=======
+    ```
+    $ npm install -g gulp eslint
+    ``` 
+
+## 透過 package.json 所需之 Node 模組
+
+    ```
+    $ npm install
+    ``` 
+
+# 執行工具
+
+    ```
+    $ gulp
+    ``` 
+>>>>>>> 04f6f6d0a78dbf555be5b646f284c4a47320da61
 
