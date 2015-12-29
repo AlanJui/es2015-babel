@@ -1,0 +1,15 @@
+$main-color: #444;
+$font-size: 16px;
+$margin: 10px;
+
+body {
+	margin: $margin;
+	padding: 0;
+	/*font: 700 24px/1.5 "Amatic SC", cursive;*/
+	font-size: $font-size;
+	color: $main-color;
+}
+
+h1 {
+	color: #f00;
+}

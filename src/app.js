@@ -1,4 +1,4 @@
-'use strict';
+import Member from './model/member';
 
 class API {
   static sayHello() {
@@ -7,5 +7,7 @@ class API {
   }
 }
 
+let alanjui = new Member('Stacy', 'Wu');
+
 let element = document.querySelector('.container');
-element.innerHTML = API.sayHello();
+element.innerHTML = alanjui.greet();
