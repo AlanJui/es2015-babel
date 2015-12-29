@@ -8,72 +8,35 @@
  * 支援 SASS 編譯
  * 支援 BrowserSync ，可為開發時使用之 Web Server
 
-# 安裝
+# 安裝作業
 
 ## 事前準備
 
-<<<<<<< HEAD
 使用本工具前，須事先完成 node, npm 安裝。欲確認 node、npm 是否已完成安裝，並能正常運作，可在「終端機」輸入如下指令，以便確認：
  
-```
-$ node -v
-v5.2.0
-```
-
-```
-$ npm -v
-3.3.12
-```
-=======
- * 使用本工具前，須事先完成 node, npm 安裝。欲確認 node、npm 是否已完成安裝，並能正常運作，可在「終端機」輸入如下指令，以便確認：
-
-    ```
     $ node -v
     v5.2.0
 
     $ npm -v
     3.3.12
-    ```
->>>>>>> 04f6f6d0a78dbf555be5b646f284c4a47320da61
 
-## 安裝配合本工具所需之 Node 模組
 
-### 需求說明
+## 安裝配合本工具所需之公用 Node 模組
 
-本工具執行時，尚需配合如下之 Node 模組，才能正常運作：
+本工具執行時，尚需配合如下之公用 Node 模組，才能正常運作：
 
  * Gulp
  * ESLint
 
-### 安裝指令
+`安裝指令`
 
-<<<<<<< HEAD
     $ npm install -g gulp eslint
 
-## 透過 package.json 所需之 Node 模組
+## 透過 package.json 安裝所需之 Node 模組
 
     $ npm install
 
-# 使用
+# 執行作業
 
     $ gulp
-
-
-=======
-    ```
-    $ npm install -g gulp eslint
-    ``` 
-
-## 透過 package.json 所需之 Node 模組
-
-    ```
-    $ npm install
-    ``` 
-
-# 執行工具
-
-    ```
-    $ gulp
-    ``` 
->>>>>>> 04f6f6d0a78dbf555be5b646f284c4a47320da61
 
