@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var lint = require('gulp-eslint');
 var sass = require('gulp-sass');
 var fs = require('fs');
 var del = require('del');
@@ -17,7 +18,20 @@ gulp.task('build-html', function () {
 		.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('build-scripts', function() {
+gulp.task('lint-scripts', function () {
+	var patterns = [
+		'./src/scripts/**/*.{js,jsx}',
+		'!node_modules/**',
+		'!bower_componments/**'
+	];
+
+	return gulp.src(patterns)
+		.pipe(lint())
+		.pipe(lint.format())
+		.pipe(lint.failAfterError());
+})
+
+gulp.task('build-scripts', ['lint-scripts'], function() {
 	return browserify({debug: true})
 		.transform(babelify)
 		.require('src/app.js', {entry: true})
